@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@50..1000&family=Roboto:wght@100..900&family=Rubik:wght@300..900&display=swap");
+
+body {
+  background: radial-gradient(
+    343px at 46.3% 47.5%,
+    rgb(242, 242, 242) 0%,
+    rgb(241, 241, 241) 72.9%
+  );
+  font-family: "Rubik", sans-serif;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 10%;
+  height: 10px;
+  border-radius: 20px;
+  border: 2px solid #676564;
+  padding: 6px 20px;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+}
+
+.info p {
+  color: #676564;
+  font-size: 0.5rem;
+  font-weight: 500;
+}
+
+h1 {
+  margin: 30px;
+  margin-top: 30px;
+  text-shadow: 5px 0 #dadada;
+  font-size: 4rem;
+  color: #676564;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #676564;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-color: #fdfdfd;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 10px solid #444342;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+ background-image: url(./images/simon1.jpg);
+   background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.green {
+  background-image: url(./images/simon2.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blue {
+  background-image: url(./images/simon3.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.yellow {
+  background-image: url(./images/simon4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+ border: 10px solid #dadada;
+}
+
+footer {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #676564;
+  font-size: 0.8rem;
+}
