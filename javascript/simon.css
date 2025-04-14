@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@50..1000&family=Roboto:wght@100..900&family=Rubik:wght@300..900&display=swap");
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   background: radial-gradient(
     343px at 46.3% 47.5%,
@@ -13,41 +19,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px auto 70px;
-  padding: 0px 24px;
+  margin: 50px auto 0;
+  padding: 6px 40px;
   border-radius: 20px;
   border: 2px solid #676564;
   background-color: #f7f7f7;
   width: fit-content;
-  max-width: 90%;
+  height: 30px;
+  max-width: 100%;
   text-transform: uppercase;
 }
 
 .info p {
   color: #676564;
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-weight: 600;
   white-space: nowrap;
 }
 
-h1 {
-  margin: 0 auto;
-  text-shadow: 5px 0 #dadada;
-  font-size: 4rem;
-  color: #676564;
-}
-
 #level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin: 5%;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 5px 0 #dadada;
+  font-size: 3.5rem;
+  margin: 50px 0 auto;
   color: #676564;
   text-align: center;
 }
 
 .container {
   display: block;
-  margin: 70px 0 auto;
+  margin: 40px 0 auto;
   max-width: 100%;
   text-align: center;
 }
@@ -61,8 +62,8 @@ h1 {
 
 .btn {
   margin: 15px;
-  flex: 1 1 150px;
-  max-width: 350px;
+  flex: 1 1 20%;
+  max-width: 20%;
   aspect-ratio: 1 / 1;
   background-color: #fdfdfd;
   border-radius: 10%;
@@ -76,28 +77,28 @@ h1 {
 }
 
 .red {
- background-image: url(./images/simon1.jpg);
-   background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
+  background-image: url(./images/dog1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .green {
-  background-image: url(./images/simon2.jpg);
-    background-size: cover;
+  background-image: url(./images/dog2.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .blue {
-  background-image: url(./images/simon3.jpg);
-    background-size: cover;
+  background-image: url(./images/dog3.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .yellow {
-  background-image: url(./images/simon4.png);
+  background-image: url(./images/dog4.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -105,17 +106,57 @@ h1 {
 
 .pressed {
   box-shadow: 0 0 20px white;
- border: 10px solid #dadada;
+  border: 10px solid #dadada;
 }
 
 footer {
-  margin-top: 70px;
-  margin-bottom: 15px;
   text-align: center;
+  margin: 30px 0 30px auto;
 }
 
 footer a {
   text-decoration: none;
   color: #676564;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    margin: 70px auto 0;
+    padding: 6px 60px;
+    height: 40px;
+    max-width: 100%;
+  }
+
+  .info p {
+    font-size: 1.2rem;
+  }
+
+  #level-title {
+    font-size: 3.5rem;
+    margin: 70px 0 auto;
+  }
+
+  .btn {
+    flex: 1 1 40%;
+    max-width: 40%;
+    margin-top: 40px;
+  }
+
+  footer {
+    margin: 70px 0 30px auto;
+  }
+
+  footer a {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .btn {
+    flex: 1 1 40%;
+    max-width: 40%; 
+    margin-top: 40px;
+  }
 }
