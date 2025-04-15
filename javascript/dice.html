@@ -2,15 +2,109 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Dice Game</title>
-    <link rel="icon" href="./images/dice.png" type="image/png" />
-    <link rel="stylesheet" href="dice.css" />
+    <meta name="description" content="The Dice Game by Ecade" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="dice.css" />
   </head>
   <body>
+    <nav>
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Ecade Logo" />
+        </div>
+
+        <div class="menu">
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+
+          <div class="sidemenu">
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="sidebar">
+              <div class="sidebar-main">
+                <div class="logo">
+                  <img src="./images/logo.png" alt="Ecade Logo" />
+                </div>
+
+                <div class="close-icon">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+
+              <div class="sidebar-content">
+                <div class="nav-lists">
+                  <ul class="lists">
+                    <hr />
+                    <li class="list">
+                      <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="list">
+                      <a href="#" class="nav-link">Collection</a>
+                    </li>
+                    <li class="list">
+                      <a href="#" class="nav-link">About</a>
+                    </li>
+                    <hr />
+                  </ul>
+                </div>
+
+                <div class="social-lists">
+                  <ul class="lists">
+                    <li class="list">
+                      <a
+                        href="https://github.com/globaltechgirl"
+                        class="nav-link"
+                        >GitHub</a
+                      >
+                    </li>
+                    <li class="list">
+                      <a href="https://x.com/globaltechgirl" class="nav-link"
+                        >Twitter</a
+                      >
+                    </li>
+                    <li class="list">
+                      <a
+                        href="https://www.linkedin.com/in/globaltechgirl/"
+                        class="nav-link"
+                        >Linkedin</a
+                      >
+                    </li>
+                    <hr />
+                  </ul>
+                </div>
+
+                <div class="coder-wrapper">
+                  <div class="coder">
+                    <div class="coder-img">
+                      <img src="./images/coder.png" alt="Onyinye Ofili" />
+                    </div>
+
+                    <div class="coder-details">
+                      <p class="coder-name">Onyinye O.</p>
+                      <p class="coder-email">onyinyeofili209@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <div class="info">
         <p>Refresh page to roll the dice</p>
@@ -18,22 +112,29 @@
 
       <h1>Roll the Dice</h1>
 
-      <div class="dice">
-        <img src="./images/user.jpg" alt="" class="dp" />
-        <p>Player 1</p>
-        <img class="img1" src="./images/dice6.png" />
-      </div>
-
-      <div class="dice">
-        <img src="./images/user.jpg" alt="" class="dp" />
-        <p>Player 2</p>
-        <img class="img2" src="./images/dice6.png" />
+      <div class="dice-container">
+        <div class="dice">
+          <img src="./images/user.jpg" alt="" class="dp" />
+          <p>Player 1</p>
+          <img class="img1" src="./images/dice6.png" />
+        </div>
+  
+        <div class="dice">
+          <img src="./images/user.jpg" alt="" class="dp" />
+          <p>Player 2</p>
+          <img class="img2" src="./images/dice6.png" />
+        </div>
       </div>
     </div>
 
     <footer>
       <a href="https://github.com/globaltechgirl">© 2025 GlobalTechGirl</a>
     </footer>
+
+    <script
+      src="https://kit.fontawesome.com/8658332b34.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="dice.js" charset="utf-8"></script>
   </body>

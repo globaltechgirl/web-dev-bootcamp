@@ -1,51 +1,142 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Simon game</title>
+    <meta name="description" content="The Simon Game by Ecade" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="simon.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>The Simon game</title>
-  <link rel="stylesheet" href="simon.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Ecade Logo" />
+        </div>
 
-<body>
-  <div class="info">
-    <p>Press A Key to Start</p>
-  </div>
+        <div class="menu">
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
 
-  <h1 id="level-title">Simon Game!</h1>
+          <div class="sidemenu">
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
 
-  <div class="container">
+            <div class="sidebar">
+              <div class="sidebar-main">
+                <div class="logo">
+                  <img src="./images/logo.png" alt="Ecade Logo" />
+                </div>
 
-    <div class="row">
+                <div class="close-icon">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
 
-      <div type="button" id="green" class="btn green">
+              <div class="sidebar-content">
+                <div class="nav-lists">
+                  <ul class="lists">
+                    <hr />
+                    <li class="list">
+                      <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="list">
+                      <a href="#" class="nav-link">Collection</a>
+                    </li>
+                    <li class="list">
+                      <a href="#" class="nav-link">About</a>
+                    </li>
+                    <hr />
+                  </ul>
+                </div>
 
+                <div class="social-lists">
+                  <ul class="lists">
+                    <li class="list">
+                      <a
+                        href="https://github.com/globaltechgirl"
+                        class="nav-link"
+                        >GitHub</a
+                      >
+                    </li>
+                    <li class="list">
+                      <a href="https://x.com/globaltechgirl" class="nav-link"
+                        >Twitter</a
+                      >
+                    </li>
+                    <li class="list">
+                      <a
+                        href="https://www.linkedin.com/in/globaltechgirl/"
+                        class="nav-link"
+                        >Linkedin</a
+                      >
+                    </li>
+                    <hr />
+                  </ul>
+                </div>
+
+                <div class="coder-wrapper">
+                  <div class="coder">
+                    <div class="coder-img">
+                      <img src="./images/coder.png" alt="Onyinye Ofili" />
+                    </div>
+
+                    <div class="coder-details">
+                      <p class="coder-name">Onyinye O.</p>
+                      <p class="coder-email">onyinyeofili209@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="info">
+      <p class="desktop">Press A Key to Start</p>
+      <p class="mobile">Refresh page to Start</p>
+    </div>
+
+    <h1 id="level-title">Simon Game!</h1>
+
+    <div class="container">
+      <div class="row">
+        <div type="button" id="brown" class="btn brown"></div>
+
+        <div type="button" id="pink" class="btn pink"></div>
       </div>
 
-      <div type="button" id="red" class="btn red">
-
+      <div class="row">
+        <div type="button" id="blue" class="btn blue"></div>
+        <div type="button" id="green" class="btn green"></div>
       </div>
     </div>
 
-    <div class="row">
+    <footer>
+      <a href="https://github.com/globaltechgirl">© 2025 GlobalTechGirl</a>
+    </footer>
 
-      <div type="button" id="yellow" class="btn yellow">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-      </div>
-      <div type="button" id="blue" class="btn blue">
+    <script
+      src="https://kit.fontawesome.com/8658332b34.js"
+      crossorigin="anonymous"
+    ></script>
 
-      </div>
-
-    </div>
-  </div>
-
-  <footer>
-    <a href="https://github.com/globaltechgirl">© 2025 GlobalTechGirl</a>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="simon.js" charset="utf-8"></script>
-</body>
-
+    <script src="simon.js" charset="utf-8"></script>
+  </body>
 </html>
