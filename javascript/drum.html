@@ -2,18 +2,113 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Drum Kit</title>
-    <link rel="icon" href="./images/dice.png" type="image/png" />
-    <link rel="stylesheet" href="drum.css" />
+    <meta name="description" content="The Drum Kit by Ecade" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="drum.css" />
   </head>
   <body>
+    <nav>
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Ecade Logo" />
+        </div>
+
+        <div class="menu">
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+
+          <div class="sidemenu">
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="sidebar">
+              <div class="sidebar-main">
+                <div class="logo">
+                  <img src="./images/logo.png" alt="Ecade Logo" />
+                </div>
+
+                <div class="close-icon">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+
+              <div class="sidebar-content">
+                <div class="nav-lists">
+                  <ul class="lists">
+                    <hr />
+                    <li class="list">
+                      <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="list">
+                      <a href="#" class="nav-link">Collection</a>
+                    </li>
+                    <li class="list">
+                      <a href="#" class="nav-link">About</a>
+                    </li>
+                    <hr />
+                  </ul>
+                </div>
+
+                <div class="social-lists">
+                  <ul class="lists">
+                    <li class="list">
+                      <a
+                        href="https://github.com/globaltechgirl"
+                        class="nav-link"
+                        >GitHub</a
+                      >
+                    </li>
+                    <li class="list">
+                      <a href="https://x.com/globaltechgirl" class="nav-link"
+                        >Twitter</a
+                      >
+                    </li>
+                    <li class="list">
+                      <a
+                        href="https://www.linkedin.com/in/globaltechgirl/"
+                        class="nav-link"
+                        >Linkedin</a
+                      >
+                    </li>
+                    <hr />
+                  </ul>
+                </div>
+
+                <div class="coder-wrapper">
+                  <div class="coder">
+                    <div class="coder-img">
+                      <img src="./images/coder.png" alt="Onyinye Ofili" />
+                    </div>
+
+                    <div class="coder-details">
+                      <p class="coder-name">Onyinye O.</p>
+                      <p class="coder-email">onyinyeofili209@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <div class="info">
-        <p>Click the boxes to beat the drum</p>
+        <p class="desktop">Press Key to Beat</p>
+        <p class="mobile">Click Box to Beat</p>
       </div>
 
       <h1 id="title">Beat the Drum!</h1>
@@ -30,8 +125,13 @@
     </div>
 
     <footer>
-      <a href="https://github.com/globaltechgirl">coded by @globaltechgirl</a>
+      <a href="https://github.com/globaltechgirl">© 2025 GlobalTechGirl</a>
     </footer>
+
+    <script
+      src="https://kit.fontawesome.com/8658332b34.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="drum.js" charset="utf-8"></script>
   </body>
