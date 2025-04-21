@@ -21,7 +21,7 @@ nav {
   left: 0;
   margin-bottom: 8;
   margin: 0px auto;
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px 25px 20px;
 }
 
 nav .nav-bar {
@@ -36,7 +36,7 @@ nav .nav-bar {
 }
 
 .logo img {
-  width: 140px;
+  width: 120px;
 }
 
 .nav-bar .nav-links {
@@ -101,7 +101,7 @@ nav .nav-bar {
   border: 2px solid #676564;
   background-color: #f7f7f7;
   width: fit-content;
-  height: 30px;
+  height: 28px;
   max-width: 100%;
   text-transform: uppercase;
 }
@@ -118,7 +118,7 @@ nav .nav-bar {
 }
 
 h1 {
-  margin: 50px 0 100px auto;
+  margin: 30px 0 auto;
   color: #676564;
   text-shadow: 5px 0 #dadada;
   font-size: 4rem;
@@ -131,7 +131,7 @@ h1 {
   gap: 20px;
   justify-content: center;
   max-width: 90%;
-  margin: 50px auto;
+  margin: 90px auto 0;
   padding: 0 20px;
 }
 
@@ -160,10 +160,10 @@ h1 {
 .w::before {
   content: "w";
   position: absolute;
-  top: -70px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Arvo", cursive;
   line-height: -10;
   font-weight: 500;
@@ -182,10 +182,10 @@ h1 {
 .a::before {
   content: "a";
   position: absolute;
-  top: -70px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Arvo", cursive;
   line-height: -10;
   font-weight: 500;
@@ -204,10 +204,10 @@ h1 {
 .s::before {
   content: "s";
   position: absolute;
-  top: -70px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Arvo", cursive;
   line-height: -10;
   font-weight: 500;
@@ -226,10 +226,10 @@ h1 {
 .d::before {
   content: "d";
   position: absolute;
-  top: -70px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Arvo", cursive;
   line-height: -10;
   font-weight: 500;
@@ -248,10 +248,10 @@ h1 {
 .j::before {
   content: "j";
   position: absolute;
-  top: -70px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Arvo", cursive;
   line-height: -10;
   font-weight: 500;
@@ -270,10 +270,10 @@ h1 {
 .k::before {
   content: "k";
   position: absolute;
-  top: -70px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Arvo", cursive;
   line-height: -10;
   font-weight: 500;
@@ -292,10 +292,10 @@ h1 {
 .l::before {
   content: "l";
   position: absolute;
-  top: -70px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Arvo", cursive;
   line-height: -10;
   font-weight: 500;
@@ -339,7 +339,7 @@ footer a {
   }
 
   .logo img {
-    width: 110px;
+    width: 100px;
   }
 
   .nav-links li {
@@ -356,7 +356,7 @@ footer a {
     display: flex;
     align-items: center;
     margin: 0 24px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     cursor: pointer;
   }
 
@@ -511,7 +511,7 @@ footer a {
 
   h1 {
     font-size: 2rem;
-    margin: 35px 0 80px auto;
+    margin: 30px 0 -15px auto;
   }
 
   .set {
@@ -531,16 +531,16 @@ footer a {
   .j::before,
   .l::before,
   .k::before {
-    top: -60px;
-    font-size: 1.9rem;
+    top: -50px;
+    font-size: 1.8rem;
   }
 
   footer {
-    margin: -60px 0 40px auto;
+    margin: -20px 0 40px auto;
   }
 
   footer a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -556,7 +556,7 @@ footer a {
 
 @media (min-width: 601px) and (max-width: 800px) {
   .info p {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 
   h1 {
@@ -574,7 +574,7 @@ footer a {
   }
 
   footer {
-    margin-top: -60px;
+    margin-top: -20px;
   }
 }
 
@@ -594,6 +594,6 @@ footer a {
   }
 
   footer {
-    margin-top: -60px;
+    margin-top: -20px;
   }
 }
