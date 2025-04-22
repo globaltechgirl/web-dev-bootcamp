@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Swiper Typing</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    body { font-family: Arial; }
+    .swiper { width: 100%; height: 300px; }
+    .swiper-slide { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+  </style>
+</head>
+<body>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <p class="line1">Hello Webies!</p>
+      </div>
+      <div class="swiper-slide">
+        <p class="line4"></p>
+        <p class="line5"><span><a href="#"></a></span></p>
+        <p class="line6"><span></span></p>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    function typeText(el, text, delay = 100, cb) {
+        let i = 0;
+        el.textContent = "";
+        function type() {
+          if (i < text.length) {
+            el.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, delay);
+          } else if (cb) cb();
+        }
+        type();
+      }
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        const swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+          },
+          on: {
+            slideChange: function () {
+              if (this.activeIndex === 1) {
+                const line4 = document.querySelector(".line4");
+                const line5 = document.querySelector(".line5 span a");
+                const line6 = document.querySelector(".line6 span");
+      
+                // Clear previous text before retyping
+                line4.textContent = "";
+                line5.textContent = "";
+                line6.textContent = "";
+      
+                // Re-type every time
+                typeText(line4, "You can reach me by", 100, () => {
+                  typeText(line5, "cv - onyinye ofili", 100, () => {
+                    typeText(line6, "globaltechiegirl@gmail.com", 100);
+                  });
+                });
+              }
+            },
+          },
+        });
+      });
+      
+  </script>
+</body>
+</html>

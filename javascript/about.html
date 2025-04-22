@@ -10,12 +10,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./about.css" />
   </head>
   <body>
     <div class="container">
-      <div class="cloud cloud-center"></div>
-
       <nav>
         <div class="nav-bar">
           <div class="logo">
@@ -53,7 +55,9 @@
                         <a href="./index.html" class="nav-link">Home</a>
                       </li>
                       <li class="list">
-                        <a href="./collection.html" class="nav-link">Collection</a>
+                        <a href="./collection.html" class="nav-link"
+                          >Collection</a
+                        >
                       </li>
                       <li class="list">
                         <a href="#" class="nav-link">About</a>
@@ -108,91 +112,83 @@
         </div>
       </nav>
 
-      <main>
-        <div class="floating">
-          <div class="object" data-value="3">
-            <h1>Interactive Web Based Game Interfaces</h1>
-
-            <p>
-              a cozy collection of classic web games curated for quick, simple
-              and endless fun.
-            </p>
-          </div>
-
-          <div class="object img-wrapper" data-value="6">
-            <img src="./images/icon1.png" alt="dice-icon" />
-          </div>
-
-          <div class="object img-wrapper" data-value="-6">
-            <img src="./images/icon2.png" alt="dice-icon" />
-          </div>
-        </div>
-      </main>
-    </div>
-
-    <div class="collection-wrapper">
-      <div class="collection">
-        <h2>ECADE Games</h2>
-
-        <div class="dropdown">
-          <div class="select">
-            <span class="selected">All</span>
-            <div class="caret"><i class="bi bi-caret-down-fill"></i></div>
-          </div>
-
-          <ul class="menus">
-            <li class="active">All</li>
-            <li>New</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="games">
-        <div class="game1">
-          <img src="./images/game1.png" alt="dice-game-image" />
-
-          <h3>The Dice Game</h3>
-
-          <div class="game-info">
-            <div class="game-btn">
-              <i class="bi bi-dot"></i>
-            </div>
-
-            <div class="game-p">
-              <a href="./dice.html"> visit game website</a>
+      <div class="about-wrapper">
+        <div class="swiper-top-pagination">
+          <div class="section-info">
+            <p class="section-title">About Me</p>
+            <div class="divider1"></div>
+            <div class="section-steps">
+              <span class="step active">1</span>
+              <span class="step">2</span>
             </div>
           </div>
         </div>
 
-        <div class="game2">
-          <img src="./images/game1.png" alt="drum-game-image" />
-          <h3>The Drum Kit</h3>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide about-intro">
+              <div class="swiper-main">
+                <p class="swiper-span line1">Hello Webies!</p>
+                <p class="line2">My name is Onyinye Ofili</p>
+                <p class="line3">Software Engineer from Nigeria</p>
+              </div>
 
-          <div class="game-info">
-            <div class="game-btn">
-              <i class="bi bi-dot"></i>
+              <div class="swiper-sub">
+                <div class="divider2"></div>
+                <p>
+                  I design intuitive projects and build impactful tech products.
+                  With 1 year of experience in frontend development, I
+                  specialize in crafting meaningful, user-centric software
+                  solutions. My current tech stack - HTML, CSS, and JavaScript.
+                </p>
+              </div>
             </div>
 
-            <div class="game-p">
-              <a href="./drum.html"> visit game website</a>
+            <div class="swiper-slide about-contact">
+              <div class="swiper-main">
+                <p class="swiper-span line4">You can reach me by</p>
+                <p class="swiper-p line5">
+                  <span>
+                    <a
+                      href="https://app.luminpdf.com/viewer/680709a12ecdb67fa542c303"
+                    >
+                      CV - onyinye ofili</a
+                    ></span
+                  >
+                </p>
+                <p class="swiper-p line6">
+                  <span>Email - globaltechiegirl@gmail.com</span>
+                </p>
+              </div>
+
+              <div class="swiper-sub">
+                <div class="divider2"></div>
+                <p>
+                  When I'm not designing cool stuff or troubleshooting technical
+                  issues, you can find me reading a great book or binge-watching
+                  a Netflix show. To learn more, check out
+                  <a href="https://github.com/globaltechgirl"
+                    >what I do in tech</a
+                  >, read my
+                  <a href="https://substack.com/@onyinyeo?utm_source=user-menu"
+                    >latest blog post</a
+                  >, or
+                  <a href="https://www.linkedin.com/in/globaltechgirl"
+                    >get in touch</a
+                  >.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="game3" data-tag="new">
-          <img src="./images/game1.png" alt="simon-game-image" />
-
-          <h3>The Simon Game</h3>
-
-          <div class="game-info">
-            <div class="game-btn">
-              <i class="bi bi-dot"></i>
-            </div>
-
-            <div class="game-p">
-              <a href="./simon.html"> visit game website</a>
-            </div>
-          </div>
+        <div class="swiper-bottom-nav">
+          <button class="swiper-button-prev">
+            <i class="fa-solid fa-angle-left"></i> Prev
+          </button>
+          <button class="swiper-button-next">
+            Next <i class="fa-solid fa-angle-right"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -245,6 +241,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="script.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="about.js" charset="utf-8"></script>
   </body>
 </html>
