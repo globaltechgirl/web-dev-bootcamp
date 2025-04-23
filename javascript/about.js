@@ -21,6 +21,46 @@ closeIcon.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
+// object movement
+let angle = 0;
+
+document.addEventListener("mousemove", parallax);
+
+function parallax(e) {
+  document.querySelectorAll(".object").forEach(function (move) {
+    const moving_value = move.getAttribute("data-value");
+    const x = (e.clientX * moving_value) / 1500;
+    const y = (e.clientY * moving_value) / 1500;
+
+    move.dataset.mouseX = x;
+    move.dataset.mouseY = y;
+  });
+}
+
+function animateFloating() {
+  angle += 0.02;
+
+  document.querySelectorAll(".object").forEach(function (move) {
+    move.currentX = move.currentX || 0;
+    move.currentY = move.currentY || 0;
+
+    const targetX = parseFloat(move.dataset.mouseX || 0);
+    const targetY = parseFloat(move.dataset.mouseY || 0);
+
+    move.currentX += (targetX - move.currentX) * 0.03;
+    move.currentY += (targetY - move.currentY) * 0.03;
+
+    const floatY = Math.sin(angle) * 10;
+    move.style.transform = `translate(${move.currentX}px, ${
+      move.currentY + floatY
+    }px)`;
+  });
+
+  requestAnimationFrame(animateFloating);
+}
+
+animateFloating();
+
 // social links
 const socialLinks = document.querySelectorAll(".social-link");
 const ball = document.querySelector(".slider .ball");
