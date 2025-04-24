@@ -21,45 +21,27 @@ closeIcon.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
-// object movement
-let angle = 0;
+// infinite scroller
+const scrollers = document.querySelectorAll(".scroller");
 
-document.addEventListener("mousemove", parallax);
-
-function parallax(e) {
-  document.querySelectorAll(".object").forEach(function (move) {
-    const moving_value = move.getAttribute("data-value");
-    const x = (e.clientX * moving_value) / 1500;
-    const y = (e.clientY * moving_value) / 1500;
-
-    move.dataset.mouseX = x;
-    move.dataset.mouseY = y;
-  });
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
 }
 
-function animateFloating() {
-  angle += 0.02;
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
 
-  document.querySelectorAll(".object").forEach(function (move) {
-    move.currentX = move.currentX || 0;
-    move.currentY = move.currentY || 0;
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
 
-    const targetX = parseFloat(move.dataset.mouseX || 0);
-    const targetY = parseFloat(move.dataset.mouseY || 0);
-
-    move.currentX += (targetX - move.currentX) * 0.03;
-    move.currentY += (targetY - move.currentY) * 0.03;
-
-    const floatY = Math.sin(angle) * 10;
-    move.style.transform = `translate(${move.currentX}px, ${
-      move.currentY + floatY
-    }px)`;
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
   });
-
-  requestAnimationFrame(animateFloating);
 }
-
-animateFloating();
 
 // social links
 const socialLinks = document.querySelectorAll(".social-link");
