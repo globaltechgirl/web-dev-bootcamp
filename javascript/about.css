@@ -149,7 +149,6 @@ nav .nav-bar {
   font-weight: 600;
   font-size: 0.9rem;
   color: #444342;
-  opacity: 0.9;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -159,7 +158,6 @@ nav .nav-bar {
 
 .maintitle1 p img {
   width: 13px;
-  opacity: 0.9;
   margin-top: 2px;
 }
 
@@ -201,8 +199,8 @@ nav .nav-bar {
 .maintitle2 {
   font-weight: 550;
   font-size: 0.7rem;
-  padding: 5px 5px;
-  border-radius: 10px;
+  padding: 6px;
+  border-radius: 8px;
   background-color: #f0f0f0;
   box-shadow: inset 0 0 1px 1px #dadada;
   display: flex;
@@ -216,8 +214,9 @@ nav .nav-bar {
 
 .maintitle2 div:nth-child(1) {
   border-radius: 5px;
-  background-color: #dadada;
   padding: 5px 8px;
+  background-color: #f7f7f7;
+  box-shadow: inset 0 0 1px 1px #dadada;
 }
 
 .headertext1 {
@@ -240,19 +239,17 @@ nav .nav-bar {
 }
 
 .stack {
-  width: 50%;
-  margin: 0 auto;
   color: #444342;
 }
 
 .stack-main {
   font-weight: 550;
-  font-size: 0.7rem;
-  padding: 8px;
+  font-size: 0.75rem;
+  padding: 8px 16px;
   border-radius: 50px;
   background-color: #f0f0f0;
   box-shadow: inset 0 0 1px 1px #dadada;
-  max-width: 10%;
+  width: fit-content;
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 50px;
@@ -260,7 +257,7 @@ nav .nav-bar {
 
 .stack-sub {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #444342;
   margin-bottom: 40px;
 }
@@ -269,6 +266,8 @@ nav .nav-bar {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 3rem;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .lists {
@@ -290,32 +289,33 @@ nav .nav-bar {
 }
 
 .services {
-  width: 70%;
-  margin: 0 auto;
   color: #444342;
+  margin: 0 auto;
 }
 
 .services-main {
   font-weight: 550;
-  font-size: 0.7rem;
-  padding: 8px;
+  font-size: 0.75rem;
+  padding: 8px 16px;
   border-radius: 50px;
   background-color: #f0f0f0;
   box-shadow: inset 0 0 1px 1px #dadada;
-  max-width: 10%;
+  width: fit-content;
   margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .services-sub {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #444342;
   margin-bottom: 40px;
 }
 
 .services-list {
+  width: 70%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -343,7 +343,7 @@ nav .nav-bar {
   padding: 6px 8px;
   border-radius: 10px;
   background-color: #f0f0f0;
-  box-shadow: inset 0 0 1px 1px #dadada;
+  box-shadow: inset 0 0 1px 0.5px #676564;
 }
 
 .list-sub p {
@@ -353,27 +353,25 @@ nav .nav-bar {
 }
 
 .personal {
-  width: 70%;
-  margin: 0 auto;
   color: #444342;
 }
 
 .personal-main {
   font-weight: 550;
-  font-size: 0.7rem;
-  padding: 8px;
+  font-size: 0.75rem;
+  padding: 8px 16px;
   border-radius: 50px;
   background-color: #f0f0f0;
   box-shadow: inset 0 0 1px 1px #dadada;
-  max-width: 10%;
+  width: fit-content;
   margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .personal-sub {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #444342;
   margin-bottom: 40px;
 }
@@ -383,7 +381,7 @@ nav .nav-bar {
   border-radius: 10px;
   background-color: #f0f0f0;
   box-shadow: inset 0 0 1px 1px #dadada;
-  max-width: 55%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -448,44 +446,63 @@ nav .nav-bar {
   font-size: 0.6rem;
 }
 
-.about-links {
+.contact {
+  color: #444342;
+}
+
+.contact-main {
+  font-weight: 550;
+  font-size: 0.75rem;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background-color: #f0f0f0;
+  box-shadow: inset 0 0 1px 1px #dadada;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
   margin-top: 50px;
+}
+
+.contact-links {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   gap: 2.5rem;
 }
 
-.about-links a {
+.contact-links a {
   text-decoration: none;
   font-weight: 550;
   font-size: 0.75rem;
   padding: 10px 15px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 2px #dadada;
+  box-shadow: 0 0 2px 2px #f0f0f0;
   display: flex;
   gap: 5px;
   align-items: center;
 }
 
-.about-links a:nth-child(1) {
+.contact-links a:nth-child(1) {
   color: #444342;
   background-color: #dadada;
   border: 1.5px solid #676564;
 }
 
-.about-links a:nth-child(1):hover {
+.contact-links a:nth-child(1):hover {
   color: #f0f0f0;
   background-color: #676564;
   border: 1.5px solid #fff;
 }
 
-.about-links a:nth-child(2) {
+.contact-links a:nth-child(2) {
   color: #f0f0f0;
   background-color: #676564;
   border: 1.5px solid #fff;
 }
 
-.about-links a:nth-child(2):hover {
+.contact-links a:nth-child(2):hover {
   color: #444342;
   background-color: #dadada;
   border: 1.5px solid #676564;
@@ -766,32 +783,87 @@ footer {
     height: 100px;
   }
 
-  .about-maintitle {
-    font-size: 1.8rem;
-  }
-
-  .about-subtitle {
-    font-size: 0.8rem;
-    margin: 0 0 30px auto;
-  }
-
-  .about-maintext {
+  .headertext1 {
     font-size: 2.5rem;
-    max-width: 90%;
-    margin-bottom: 40px;
-  }
-
-  .about-subtext {
     width: 85%;
-    font-size: 0.8rem;
+    margin-top: 30px;
   }
 
-  .about-links {
+  .headertext2 {
+    font-size: 0.85rem;
+    width: 75%;
+    margin-top: 20px;
+  }
+
+  .stack-main,
+  .services-main,
+  .personal-main,
+  .contact-main {
     margin-top: 40px;
+  }
+
+  .stack-sub,
+  .services-sub,
+  .personal-sub {
+    margin-bottom: 30px;
+  }
+
+  .stack-lists {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    width: 80%;
+  }
+
+  .lists {
+    padding: 16px 13px;
+  }
+
+  .lists img {
+    width: 50px;
+  }
+
+  .services-list {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+
+  .personal-hub {
+    width: 80%;
+  }
+
+  .hub-main {
+    gap: 0.5rem;
+    padding: 8px;
+  }
+
+  .hub-img img {
+    width: 40px;
+  }
+
+  .hub-text {
+    font-size: 0.65rem;
+    gap: 0.2rem;
+  }
+
+  .hub-text p:nth-child(1) {
+    font-size: 0.75rem;
+  }
+
+  .hub-sub {
+    font-size: 0.65rem;
+  }
+
+  .hub-sub p i {
+    font-size: 0.55rem;
+  }
+
+  .contact-links {
+    margin-top: 30px;
     gap: 1rem;
   }
 
-  .about-links a {
+  .contact-links a {
     font-size: 0.6rem;
     padding: 8px 12px;
     gap: 5px;
@@ -805,15 +877,5 @@ footer {
 @media (min-width: 601px) and (max-width: 800px) {
   nav {
     padding: 20px 0px 30px 15px;
-  }
-
-  .about-maintext {
-    font-size: 3.5rem;
-    max-width: 80%;
-  }
-
-  .about-subtext {
-    width: 70%;
-    font-size: 0.85rem;
   }
 }
