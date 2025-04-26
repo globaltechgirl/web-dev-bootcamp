@@ -325,12 +325,15 @@ main {
 }
 
 .collection-wrapper {
-  padding: 60px 60px 80px 60px;
-  width: 100%;
+  padding: 60px;
+  width: 95%;
   margin: 0 auto;
   overflow: hidden;
   color: #444342;
   margin-bottom: 40px;
+  border: 1px solid #ececec;
+  background-color: #f7f7f7;
+  border-radius: 10px;
 }
 
 .collection {
@@ -346,7 +349,7 @@ main {
   font-weight: 650;
   line-height: 1.3;
   letter-spacing: 1.5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .collection-sub {
@@ -397,7 +400,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 50px;
   text-align: center;
   color: #444342;
 }
@@ -411,7 +414,7 @@ main {
 .game3 {
   width: 100%;
   max-width: 300px;
-  border: 2px solid #676564;
+  border: 1px solid #676564;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(3px);
   padding: 5px;
@@ -438,7 +441,7 @@ main {
   align-items: center;
   padding: 0px 6px 6px;
   text-align: center;
-  border: 1px solid #444342;
+  border: 0.5px solid #676564;
   border-radius: 0.5em;
   margin: 0 auto;
   margin-top: 15px;
