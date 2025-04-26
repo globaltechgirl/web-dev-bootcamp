@@ -39,49 +39,58 @@ function animateFloating() {
   requestAnimationFrame(animateFloating);
 }
 
-animateFloating();
+// game filters
 
-// dropdown menu
-const dropdowns = document.querySelectorAll(".dropdown");
+const sliders = document.querySelectorAll(
+  ".collection-slider div:not(.slider-bg)"
+);
+const sliderBg = document.querySelector(".slider-bg");
+const games = document.querySelectorAll(".games > div");
 
-dropdowns.forEach((dropdown) => {
-  const select = dropdown.querySelector(".select");
-  const caret = dropdown.querySelector(".caret");
-  const menus = dropdown.querySelector(".menus");
-  const options = dropdown.querySelectorAll(".menus li");
-  const selected = dropdown.querySelector(".selected");
+function moveBgToSlider(slider) {
+  const sliderRect = slider.getBoundingClientRect();
+  const parentRect = slider.parentElement.getBoundingClientRect();
 
-  select.addEventListener("click", () => {
-    select.classList.toggle("select-clicked");
-    caret.classList.toggle("caret-rotate");
-    menus.classList.toggle("menu-open");
-  });
+  const extraPadding = 8;
 
-  options.forEach((option) => {
-    option.addEventListener("click", () => {
-      selected.innerText = option.innerText;
-      select.classList.remove("select-clicked");
-      caret.classList.remove("caret-rotate");
-      menus.classList.remove("menu-open");
+  const left = sliderRect.left - parentRect.left - extraPadding / 2;
+  const width = sliderRect.width + extraPadding;
 
-      options.forEach((opt) => opt.classList.remove("active"));
-      option.classList.add("active");
+  sliderBg.style.transform = `translateX(${left}px)`;
+  sliderBg.style.width = `${width}px`;
+}
 
-      // Filter logic
-      const filter = option.innerText.toLowerCase();
-      const gameItems = document.querySelectorAll(".games > div");
+const firstSlider = sliders[0];
+firstSlider.classList.add("active");
 
-      gameItems.forEach((game) => {
-        if (filter === "all") {
-          game.style.display = "block";
-        } else {
-          if (game.dataset.tag === filter) {
-            game.style.display = "block";
-          } else {
-            game.style.display = "none";
-          }
-        }
-      });
+moveBgToSlider(firstSlider);
+
+sliders.forEach((slider) => {
+  slider.addEventListener("click", () => {
+    sliders.forEach((s) => s.classList.remove("active"));
+    slider.classList.add("active");
+
+    moveBgToSlider(slider);
+
+    const filterText = slider.innerText.trim().toLowerCase();
+    let filter = "";
+    if (filterText.includes("new")) {
+      filter = "new";
+    } else if (filterText.includes("top")) {
+      filter = "top";
+    }
+
+    games.forEach((game) => {
+      const tags = game.getAttribute("data-tag").toLowerCase().split(" ");
+      if (tags.includes(filter)) {
+        game.style.display = "block";
+        game.style.opacity = "1";
+        game.style.transform = "translateY(0)";
+      } else {
+        game.style.display = "none";
+        game.style.opacity = "0";
+        game.style.transform = "translateY(20px)";
+      }
     });
   });
 });
