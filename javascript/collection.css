@@ -6,22 +6,36 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
 
-.container {
-  position: relative;
-  background: radial-gradient(#dadada 20%, rgb(242, 242, 242) 20%);
-  background-size: 10px 10px;
-  background-position: 0px 20px;
-  z-index: 1;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  z-index: -2;
 }
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, #f7f7f7 1px, transparent 1px), 
+    linear-gradient(to bottom, #f7f7f7 1px, transparent 1px); 
+  background-size: 15px 15px;
+  z-index: -1;
+}
+
 
 nav {
   width: 100%;
