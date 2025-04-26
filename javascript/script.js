@@ -95,6 +95,16 @@ sliders.forEach((slider) => {
   });
 });
 
+// faqs 
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach(faq => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active"); 
+  });
+});
+
+
 // social links
 const socialLinks = document.querySelectorAll(".social-link");
 const ball = document.querySelector(".slider .ball");
