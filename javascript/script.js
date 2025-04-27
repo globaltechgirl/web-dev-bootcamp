@@ -1,3 +1,26 @@
+// menu sidebar
+const menuIcons = document.querySelectorAll(".menu-icon");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.querySelector(".overlay");
+const closeIcon = document.querySelector(".close-icon");
+
+menuIcons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
+});
+
+overlay.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+  overlay.classList.remove("active");
+});
+
+closeIcon.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+  overlay.classList.remove("active");
+});
+
 // object movement
 document.addEventListener("mousemove", parallax);
 function parallax(e) {
@@ -40,7 +63,6 @@ function animateFloating() {
 }
 
 // game filters
-
 const sliders = document.querySelectorAll(
   ".collection-slider div:not(.slider-bg)"
 );
@@ -95,15 +117,14 @@ sliders.forEach((slider) => {
   });
 });
 
-// faqs 
+// faqs
 const faqs = document.querySelectorAll(".faq");
 
-faqs.forEach(faq => {
+faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
-    faq.classList.toggle("active"); 
+    faq.classList.toggle("active");
   });
 });
-
 
 // social links
 const socialLinks = document.querySelectorAll(".social-link");
@@ -142,26 +163,4 @@ socialLinks.forEach((link) => {
       }, 300);
     }
   });
-});
-
-const menuIcons = document.querySelectorAll(".menu-icon");
-const sidebar = document.querySelector(".sidebar");
-const overlay = document.querySelector(".overlay");
-const closeIcon = document.querySelector(".close-icon");
-
-menuIcons.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    sidebar.classList.toggle("active");
-    overlay.classList.toggle("active");
-  });
-});
-
-overlay.addEventListener("click", () => {
-  sidebar.classList.remove("active");
-  overlay.classList.remove("active");
-});
-
-closeIcon.addEventListener("click", () => {
-  sidebar.classList.remove("active");
-  overlay.classList.remove("active");
 });
