@@ -21,24 +21,59 @@ closeIcon.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
-// menu filter
-const menuOptions = document.querySelectorAll(".menu-collection .menus li");
-const gameItems = document.querySelectorAll(".games > div");
+// game filters
+const sliders = document.querySelectorAll(
+  ".collection-slider div:not(.slider-bg)"
+);
+const sliderBg = document.querySelector(".slider-bg");
+const games = document.querySelectorAll(".games > div");
 
-menuOptions.forEach((option) => {
-  option.addEventListener("click", () => {
-    menuOptions.forEach((opt) => opt.classList.remove("active"));
-    option.classList.add("active");
+function moveBgToSlider(slider) {
+  const sliderRect = slider.getBoundingClientRect();
+  const parentRect = slider.parentElement.getBoundingClientRect();
 
-    const filter = option.innerText.toLowerCase();
+  const extraPadding = 8;
 
-    gameItems.forEach((game) => {
-      const tag = game.dataset.tag || "all";
+  const left = sliderRect.left - parentRect.left - extraPadding / 2;
+  const width = sliderRect.width + extraPadding;
 
-      if (filter === "all" || tag === filter) {
+  sliderBg.style.transform = `translateX(${left}px)`;
+  sliderBg.style.width = `${width}px`;
+}
+
+const firstSlider = sliders[0];
+firstSlider.classList.add("active");
+
+moveBgToSlider(firstSlider);
+
+sliders.forEach((slider) => {
+  slider.addEventListener("click", () => {
+    sliders.forEach((s) => s.classList.remove("active"));
+    slider.classList.add("active");
+
+    moveBgToSlider(slider);
+
+    const filterText = slider.innerText.trim().toLowerCase();
+    let filter = "";
+    if (filterText.includes("all")) {
+      filter = "all";
+    } else if (filterText.includes("new")) {
+      filter = "new";
+    } else if (filterText.includes("top")) {
+      filter = "top";
+    }
+
+    games.forEach((game) => {
+      const tags = game.getAttribute("data-tag").toLowerCase().split(" ");
+
+      if (filter === "all" || tags.includes(filter)) {
         game.style.display = "block";
+        game.style.opacity = "1";
+        game.style.transform = "translateY(0)";
       } else {
         game.style.display = "none";
+        game.style.opacity = "0";
+        game.style.transform = "translateY(20px)";
       }
     });
   });

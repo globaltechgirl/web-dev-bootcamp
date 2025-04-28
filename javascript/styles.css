@@ -43,7 +43,7 @@ nav {
   padding: 6px;
   border-radius: 20px;
   border: 1px solid #ececec;
-  box-shadow: 0 0 12px #dadada;
+  box-shadow: 0 0 10px #e7e7e7;
 }
 
 nav .nav-bar {
@@ -217,7 +217,7 @@ main {
 
 .main-link2 a {
   border: 1px solid #f0f0f0;
-  background-color: #dadada;
+  background-color: #e7e7e7;
   color: #444342;
 }
 
@@ -962,7 +962,7 @@ footer {
   }
 
   .collection-main {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     margin-bottom: 25px;
     width: 95%;
   }
@@ -979,8 +979,9 @@ footer {
   .game1,
   .game2,
   .game3 {
-    width: 100%;
-    max-width: 100%;
+    width: 95%;
+    max-width: 450px;
+    margin: 0 auto;
   }
 
   .games img {
@@ -1013,6 +1014,7 @@ footer {
     padding: 25px 20px;
   }
 
+
   .faq {
     padding: 10px 15px;
   }
@@ -1040,7 +1042,7 @@ footer {
   nav {
     max-width: 85%;
   }
-
+  
   .users {
     margin-top: 60px;
   }
@@ -1069,17 +1071,11 @@ footer {
   }
 
   .games {
-    padding: 0px 30px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    margin-top: 50px;
-  }
-
-  .games {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    padding: 0px 30px;
+    margin-top: 50px;
   }
 
   .games img {
