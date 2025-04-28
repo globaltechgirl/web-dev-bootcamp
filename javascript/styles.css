@@ -39,7 +39,7 @@ body::after {
 nav {
   max-width: 80%;
   margin: 0px auto;
-  margin-top: 40px;
+  margin-top: 50px;
   padding: 6px;
   border-radius: 20px;
   border: 1px solid #ececec;
@@ -144,6 +144,7 @@ main {
   height: 23px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top;
   border: 0.5px solid #f7f7f7;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   margin-left: -6px;
@@ -165,7 +166,7 @@ main {
   font-weight: 650;
   line-height: 1.3;
   letter-spacing: 1.5px;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .sub-text {
@@ -182,6 +183,7 @@ main {
   margin-top: 40px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -324,13 +326,13 @@ main {
 }
 
 .collection-wrapper {
-  padding: 70px 60px;
+  padding: 60px 0px;
   width: 95%;
   margin: 0 auto;
   overflow: hidden;
   color: #444342;
   margin-bottom: 40px;
-  margin-top: 80px;
+  margin-top: 70px;
   border: 1px solid #ececec;
   background-color: #f7f7f7;
   border-radius: 10px;
@@ -349,15 +351,7 @@ main {
   font-weight: 650;
   line-height: 1.3;
   letter-spacing: 1.5px;
-  margin-bottom: 25px;
-}
-
-.collection-sub {
-  font-size: 0.85rem;
-  font-weight: 500;
-  line-height: 1.6;
-  margin-bottom: 40px;
-  width: 45%;
+  margin-bottom: 30px;
 }
 
 .collection-slider {
@@ -402,12 +396,9 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-top: 60px;
+  padding: 0px 60px;
   text-align: center;
   color: #444342;
-}
-
-.games > div {
-  transition: all 0.4s ease;
 }
 
 .game1,
@@ -486,12 +477,12 @@ main {
 }
 
 .faqs-wrapper {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   color: #444342;
   margin-bottom: 70px;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .faq-header {
@@ -502,22 +493,40 @@ main {
   text-align: center;
 }
 
+.faq-pre {
+  padding: 4px;
+  border-radius: 20px;
+  border: 1px solid #dadada;
+  margin-bottom: 20px;
+}
+
+.faq-pre p {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 550;
+  font-size: 0.65rem;
+  border: 1px solid #f0f0f0;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  color: #444342;
+}
+
 .faq-main {
   font-size: 2rem;
   font-weight: 650;
   line-height: 1.3;
   letter-spacing: 1.5px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .faq-sub {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .faq-body {
-  max-width: 80%;
+  width: 55%;
   margin: 0 auto;
   cursor: pointer;
   border: 1px solid #ececec;
@@ -546,7 +555,7 @@ main {
 }
 
 .question p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
@@ -559,7 +568,7 @@ main {
 .answer p {
   padding-top: 1rem;
   line-height: 1.6;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 450;
   opacity: 0.9;
 }
@@ -573,8 +582,9 @@ main {
   transform: rotate(180deg);
 }
 
-i {
+.faq i {
   transition: transform 0.5s ease-in;
+  font-size: 0.85rem;
 }
 
 @keyframes fade {
@@ -879,12 +889,22 @@ footer {
 
   .users {
     margin-top: 50px;
+    padding: 6px 14px 1px;
+  }
+
+  .users-img img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .users-text {
+    font-size: 0.65rem;
   }
 
   .main-text {
     margin-top: 25px;
     width: 95%;
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .sub-text {
@@ -893,46 +913,66 @@ footer {
   }
 
   .main-links {
+    width: 100%;
     margin-top: 25px;
+    gap: 0.5rem;
+  }
+
+  .main-link1 a,
+  .main-link2 a {
+    padding: 6px 12px;
   }
 
   .floating {
     width: 90%;
     height: 90%;
   }
-  
+
   .object {
     width: 30px;
     height: 30px;
   }
-  
+
   .object img {
     width: 35px;
     height: 35px;
   }
-  
+
   .object:nth-child(1) {
     top: 30%;
   }
-  
+
   .object:nth-child(3) {
     left: -2%;
   }
-  
+
   .object:nth-child(5) {
     top: 60%;
     left: 95%;
   }
-  
+
   .object:nth-child(6) {
     top: 60%;
   }
 
+  .collection-wrapper {
+    padding: 40px 0px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  .collection-main {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    width: 95%;
+  }
+
   .games {
+    padding: 0px 20px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    margin-top: 25px;
+    margin-top: 45px;
     margin-bottom: 15px;
   }
 
@@ -948,6 +988,49 @@ footer {
     height: auto;
   }
 
+  .faqs-wrapper {
+    width: 90%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .faq-pre {
+    margin-bottom: 20px;
+  }
+
+  .faq-main {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .faq-sub {
+    margin-bottom: 35px;
+    line-height: 1.6;
+  }
+
+  .faq-body {
+    width: 95%;
+    padding: 25px 20px;
+  }
+
+  .faq {
+    padding: 10px 15px;
+  }
+
+  .question p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .answer p {
+    font-size: 0.75rem;
+    padding-top: 0.8rem;
+  }
+
+  .faq i {
+    font-size: 0.8rem;
+  }
+
   .footer {
     padding: 20px 30px;
   }
@@ -955,11 +1038,42 @@ footer {
 
 @media (min-width: 601px) and (max-width: 1024px) {
   nav {
-    padding: 20px 0px 30px 15px;
+    max-width: 85%;
   }
 
-  .floating h1 {
-    font-size: 6rem;
+  .users {
+    margin-top: 60px;
+  }
+
+  .main-text {
+    font-size: 3.5rem;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .sub-text {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .main-links {
+    margin-top: 30px;
+  }
+
+  .collection-wrapper {
+    padding: 50px 0px;
+  }
+
+  .collection-main {
+    font-size: 2.3rem;
+  }
+
+  .games {
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 50px;
   }
 
   .games {
@@ -979,11 +1093,10 @@ footer {
     width: 100%;
     max-width: 400px;
   }
-}
 
-@media (min-width: 601px) and (max-width: 800px) {
-  .floating h1 {
-    font-size: 5rem;
+  .faq-body {
+    width: 75%;
+    max-width: 600px;
   }
 }
 
