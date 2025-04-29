@@ -30,8 +30,8 @@ body::after {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: linear-gradient(to right, #f7f7f7 1px, transparent 1px),
-    linear-gradient(to bottom, #f7f7f7 1px, transparent 1px);
+  background-image: linear-gradient(to right, #fafafa 1px, transparent 1px),
+    linear-gradient(to bottom, #fafafa 1px, transparent 1px);
   background-size: 15px 15px;
   z-index: -1;
 }
@@ -1014,7 +1014,6 @@ footer {
     padding: 25px 20px;
   }
 
-
   .faq {
     padding: 10px 15px;
   }
@@ -1042,7 +1041,7 @@ footer {
   nav {
     max-width: 85%;
   }
-  
+
   .users {
     margin-top: 60px;
   }
