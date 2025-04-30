@@ -113,57 +113,64 @@ nav .nav-bar {
 }
 
 .collection-header {
-  position: relative;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
-  margin-top: 80px;
-}
-
-.collection-header::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("./images/collection-bg.svg");
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: -1;
-  margin-left: 20px;
-  opacity: 0.8;
 }
 
 .header-pre {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  width: 21.5%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  margin-bottom: 25px;
+  gap: 0.6rem;
+  padding: 4px 10px 4px 0px;
+  border-radius: 20px;
+  border: 1px solid #dadada;
+  font-weight: 550;
+  font-size: 0.7rem;
+}
+
+.pre-1 {
   color: #444342;
+  padding: 5px 12px;
+  border: 0.5px solid #dadada;
+  background-color: #f7f7f7;
+  border-radius: 20px;
 }
 
-.header-pre p {
-  font-size: 0.8rem;
-  font-weight: 550;
+.pre-2 a {
+  color: #444342;
+  text-decoration: none;
 }
 
-.header-pre i {
-  font-size: 0.8rem;
-  font-weight: 550;
+.pre-2 i {
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.pre-2 a:hover i {
+  transform: rotate(90deg);
 }
 
 .header-main {
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: #444342;
   font-weight: 650;
   line-height: 1.3;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .header-sub {
-  margin-top: 25px;
+  margin-top: 30px;
   font-size: 0.8rem;
   font-weight: 500;
   color: #444342;
@@ -176,8 +183,7 @@ nav .nav-bar {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-top: 40px;
-  padding-bottom: 20%;
+  margin-top: 45px;
 }
 
 .collection-slider {
@@ -206,7 +212,7 @@ nav .nav-bar {
   height: calc(100% - 8px);
   top: 4px;
   left: -1px;
-  background-color: #ececec;
+  background-color: #f7f7f7;
   border: 0.5px solid #dadada;
   border-radius: 20px;
   transition: all 0.4s ease;
@@ -222,7 +228,7 @@ nav .nav-bar {
   color: #444342;
   width: 100%;
   margin-bottom: 40px;
-  margin-top: -20px;
+  margin-top: 60px;
   overflow: hidden;
 }
 
@@ -253,7 +259,7 @@ nav .nav-bar {
   width: 100%;
   height: auto;
   border-radius: 0.5em;
-  background-color: #ececec;
+  background-color: #f7f7f7;
   border: 0.5px solid #dadada;
 }
 
@@ -321,7 +327,7 @@ nav .nav-bar {
   overflow: hidden;
   color: #444342;
   margin-bottom: 70px;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .services-header {
@@ -336,7 +342,7 @@ nav .nav-bar {
   padding: 4px;
   border-radius: 20px;
   border: 1px solid #dadada;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .services-pre p {
@@ -345,7 +351,7 @@ nav .nav-bar {
   font-weight: 550;
   font-size: 0.65rem;
   border: 0.5px solid #dadada;
-  background-color: #f0f0f0;
+  background-color: #f7f7f7;
   border-radius: 20px;
   color: #444342;
 }
@@ -355,31 +361,31 @@ nav .nav-bar {
   font-weight: 650;
   line-height: 1.3;
   letter-spacing: 1.5px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .services-sub {
   font-size: 0.8rem;
   font-weight: 500;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
 }
 
 .services-body {
   width: 85%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin: 0 auto;
   text-align: center;
   color: #444342;
   place-items: center;
   cursor: pointer;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
 .services {
   width: 100%;
   max-width: 330px;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
   border: 0.5px solid #dadada;
   border-radius: 0.5em;
   padding: 12px;
