@@ -151,6 +151,7 @@ nav .nav-bar {
 }
 
 .pre-2 i {
+  margin-left: 2px;
   transform: rotate(45deg);
   transition: transform 0.3s ease;
 }
@@ -321,7 +322,7 @@ nav .nav-bar {
   color: #444342;
 }
 
-.services-wrapper {
+.features-wrapper {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -330,7 +331,7 @@ nav .nav-bar {
   margin-top: 80px;
 }
 
-.services-header {
+.features-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -338,14 +339,14 @@ nav .nav-bar {
   text-align: center;
 }
 
-.services-pre {
+.features-pre {
   padding: 4px;
   border-radius: 20px;
   border: 1px solid #dadada;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-.services-pre p {
+.features-pre p {
   padding: 5px 12px;
   border-radius: 20px;
   font-weight: 550;
@@ -356,21 +357,21 @@ nav .nav-bar {
   color: #444342;
 }
 
-.services-main {
+.features-main {
   font-size: 2rem;
   font-weight: 650;
   line-height: 1.3;
   letter-spacing: 1.5px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-.services-sub {
+.features-sub {
   font-size: 0.8rem;
   font-weight: 500;
   margin-bottom: 60px;
 }
 
-.services-body {
+.features-body {
   width: 85%;
   text-align: center;
   color: #444342;
@@ -382,7 +383,7 @@ nav .nav-bar {
   gap: 40px;
 }
 
-.services {
+.features {
   width: 100%;
   max-width: 330px;
   background-color: #f7f7f7;
@@ -436,12 +437,12 @@ nav .nav-bar {
   opacity: 0.9;
 }
 
-.services:hover .main-info {
+.features:hover .main-info {
   transform: translateY(87px);
   margin-bottom: 0px;
 }
 
-.services:hover .sub-info {
+.features:hover .sub-info {
   transform: translateY(-27px);
 }
 
