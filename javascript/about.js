@@ -21,6 +21,38 @@ closeIcon.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
+// location display
+const digits = document.querySelectorAll(".digit");
+
+digits.forEach((digit, index) => {
+  const finalValue = digit.getAttribute("data-final");
+  let scrollCount = 0;
+  const characters = "0123456789.,°NSEW";
+  const interval = setInterval(() => {
+    digit.textContent =
+      characters[Math.floor(Math.random() * characters.length)];
+    scrollCount++;
+
+    if (scrollCount > 10 + index * 2) {
+      clearInterval(interval);
+      digit.textContent = finalValue;
+    }
+  }, 50);
+});
+
+// copy email
+document.getElementById("copyEmail").addEventListener("click", function () {
+  const email = "globaltechiegirl@gmail.com";
+  navigator.clipboard.writeText(email).then(() => {
+    const textElement = document.getElementById("copyText");
+    textElement.textContent = "Copied";
+
+    setTimeout(() => {
+      textElement.textContent = "Copy Email";
+    }, 2000);
+  });
+});
+
 // social links
 const socialLinks = document.querySelectorAll(".social-link");
 const ball = document.querySelector(".slider .ball");
