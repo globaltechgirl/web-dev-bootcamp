@@ -760,7 +760,7 @@ footer {
   }
 
   main {
-    width: 90%;
+    width: 85%;
     margin-top: 50px;
   }
 
@@ -790,15 +790,15 @@ footer {
 
   .header-location {
     gap: 0.4rem;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 
   #location-container {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 
   .digit {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 
   .about-main,
@@ -831,13 +831,14 @@ footer {
     line-height: 1.6;
   }
 
-  .contact-text {
+  .contact-text,
+  .contact-email {
     width: 100%;
   }
 
   .contact-email {
-    width: 100%;
-    padding: 10px 15px;
+    font-size: 0.65rem;
+    padding: 10px 12px;
   }
 
   .footer {
@@ -848,5 +849,55 @@ footer {
 @media (min-width: 601px) and (max-width: 1024px) {
   nav {
     max-width: 85%;
+  }
+
+  main {
+    width: 70%;
+    margin-top: 60px;
+  }
+
+  .section-wrapper {
+    margin-bottom: 50px;
+    padding: 2rem 1.8rem;
+  }
+
+  .section-wrapper::before,
+  .section-wrapper::after {
+    height: 50px;
+  }
+
+  .header-img img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .about-main,
+  .services-main,
+  .stack-main,
+  .contact-main {
+    margin-bottom: 35px;
+  }
+
+  .services {
+    padding: 15px 0 15px 12px;
+    font-size: 0.75rem;
+  }
+
+  .stack {
+    padding: 15px;
+    font-size: 0.75rem;
+  }
+
+  .stack p:nth-child(3) {
+    font-size: 0.65rem;
+    line-height: 1.6;
+  }
+
+  .contact-text {
+    width: 75%;
+  }
+
+  .contact-email {
+    width: 85%;
   }
 }
