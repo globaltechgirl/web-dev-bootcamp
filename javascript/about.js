@@ -43,14 +43,39 @@ digits.forEach((digit, index) => {
 // copy email
 document.getElementById("copyEmail").addEventListener("click", function () {
   const email = "globaltechiegirl@gmail.com";
+  const textElement = document.getElementById("copyText");
+  const iconElement = document.getElementById("copyIcon");
+
   navigator.clipboard.writeText(email).then(() => {
-    const textElement = document.getElementById("copyText");
-    textElement.textContent = "Copied";
+    textElement.innerHTML =
+      '<i class="fa-regular fa-copy" id="copyIcon"></i> Copied';
 
     setTimeout(() => {
-      textElement.textContent = "Copy Email";
+      textElement.innerHTML =
+        '<i class="fa-regular fa-copy" id="copyIcon"></i> Copy Email';
     }, 2000);
   });
+});
+
+// download cv
+document.getElementById("downloadCV").addEventListener("click", function () {
+  const cvFile = "./files/CV - ONYINYE OFILI.pdf";
+
+  const link = document.createElement("a");
+  link.href = cvFile;
+  link.download = "CV - ONYINYE OFILI.pdf";
+  link.click();
+
+  const textElement = document.getElementById("downloadText");
+  const iconElement = document.getElementById("downloadIcon");
+
+  textElement.innerHTML =
+    '<i class="fa-solid fa-spinner fa-spin" id="downloadIcon"></i> Downloading';
+
+  setTimeout(() => {
+    textElement.innerHTML =
+      '<i class="fa-solid fa-arrow-down" id="downloadIcon"></i> Download CV';
+  }, 2000);
 });
 
 // social links
