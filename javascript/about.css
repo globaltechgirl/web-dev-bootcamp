@@ -113,7 +113,6 @@ nav .nav-bar {
 }
 
 main {
-  width: 60%;
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -257,6 +256,8 @@ main {
 }
 
 .about-founder {
+  width: 60%;
+  margin: 0 auto;
   display: flex;
   align-items: stretch;
   gap: 1rem;
@@ -372,7 +373,6 @@ main {
 .stack-body {
   width: 100%;
   color: #444342;
-  place-items: center;
   cursor: pointer;
   margin: 0 auto;
   display: grid;
@@ -411,6 +411,8 @@ main {
 }
 
 .about-services {
+  width: 98%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

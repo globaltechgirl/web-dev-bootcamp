@@ -132,7 +132,7 @@ nav .nav-bar {
   gap: 0.6rem;
   padding: 4px 10px 4px 4px;
   border-radius: 20px;
-  border: 1px solid #dadada;
+  border: 0.5px solid #dadada;
   font-weight: 550;
   font-size: 0.7rem;
 }
@@ -193,7 +193,7 @@ nav .nav-bar {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #dadada;
+  border: 0.5px solid #dadada;
   border-radius: 20px;
   color: #444342;
   padding: 0px 8px;
@@ -214,8 +214,8 @@ nav .nav-bar {
   height: calc(100% - 8px);
   top: 4px;
   left: -1px;
-  background-color: #f7f7f7;
   border: 0.5px solid #dadada;
+  background-color: #f7f7f7;
   border-radius: 20px;
   transition: all 0.4s ease;
   z-index: 1;
@@ -339,7 +339,7 @@ nav .nav-bar {
 .features-pre {
   padding: 4px;
   border-radius: 20px;
-  border: 1px solid #dadada;
+  border: 0.5px solid #dadada;
   margin-bottom: 25px;
 }
 
