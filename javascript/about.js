@@ -21,25 +21,6 @@ closeIcon.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
-// location display
-const digits = document.querySelectorAll(".digit");
-
-digits.forEach((digit, index) => {
-  const finalValue = digit.getAttribute("data-final");
-  let scrollCount = 0;
-  const characters = "0123456789.,°NSEW";
-  const interval = setInterval(() => {
-    digit.textContent =
-      characters[Math.floor(Math.random() * characters.length)];
-    scrollCount++;
-
-    if (scrollCount > 10 + index * 2) {
-      clearInterval(interval);
-      digit.textContent = finalValue;
-    }
-  }, 50);
-});
-
 // copy email
 document.getElementById("copyEmail").addEventListener("click", function () {
   const email = "globaltechiegirl@gmail.com";
@@ -77,6 +58,28 @@ document.getElementById("downloadCV").addEventListener("click", function () {
       '<i class="fa-solid fa-arrow-down" id="downloadIcon"></i> Download CV';
   }, 2000);
 });
+
+// scrollers
+const scrollers = document.querySelectorAll(".scroller");
+
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
 
 // social links
 const socialLinks = document.querySelectorAll(".social-link");
