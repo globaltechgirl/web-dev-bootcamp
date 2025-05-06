@@ -56,7 +56,7 @@ nav .nav-bar {
   justify-content: space-between;
   padding: 10px 20px;
   border: 1px solid #f0f0f0;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   border-radius: 15px;
   color: #444342;
 }
@@ -141,7 +141,7 @@ nav .nav-bar {
   color: #444342;
   padding: 5px 12px;
   border: 0.5px solid #dadada;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   border-radius: 20px;
 }
 
@@ -215,7 +215,7 @@ nav .nav-bar {
   top: 4px;
   left: -1px;
   border: 0.5px solid #dadada;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   border-radius: 20px;
   transition: all 0.4s ease;
   z-index: 1;
@@ -261,7 +261,7 @@ nav .nav-bar {
   width: 100%;
   height: auto;
   border-radius: 0.5em;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   border: 0.5px solid #dadada;
 }
 
@@ -349,7 +349,7 @@ nav .nav-bar {
   font-weight: 550;
   font-size: 0.65rem;
   border: 0.5px solid #dadada;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   border-radius: 20px;
   color: #444342;
 }
@@ -383,10 +383,10 @@ nav .nav-bar {
 .features {
   width: 100%;
   max-width: 330px;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   border: 0.5px solid #dadada;
   border-radius: 0.5em;
-  padding: 12px;
+  padding: 15px 13px;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -401,7 +401,7 @@ nav .nav-bar {
 .main-info {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   gap: 8px;
   padding-left: 5px;
 }
@@ -412,8 +412,8 @@ nav .nav-bar {
 }
 
 .main-info i {
-  font-size: 0.7rem;
-  background-color: #f7f7f7;
+  font-size: 0.75rem;
+  background-color: #fff;
   border: 0.5px solid #dadada;
   border-radius: 5px;
   padding: 5px 6px;
@@ -435,12 +435,13 @@ nav .nav-bar {
 }
 
 .features:hover .main-info {
-  transform: translateY(87px);
+  transform: translateY(97px);
   margin-bottom: 0px;
 }
 
 .features:hover .sub-info {
   transform: translateY(-27px);
+  margin-bottom: 15px;
 }
 
 footer {
@@ -680,8 +681,7 @@ footer {
     align-items: center;
     padding: 10px 15px;
     gap: 10px;
-    border: 1px solid #f0f0f0;
-    background-color: #f0f0f0;
+    background-color: #fafafa;
     border-radius: 10px;
     border: 0.5px solid #dadada;
     color: #444342;
