@@ -261,7 +261,7 @@ main {
   display: flex;
   align-items: stretch;
   gap: 1rem;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .founder-img {
@@ -293,8 +293,14 @@ main {
   border-radius: 0.5em;
   background-color: #fff;
   width: fit-content;
-  padding: 10px 10px 5px 10px;
-  margin-bottom: 40px;
+  padding: 10px;
+  margin-bottom: 35px;
+}
+
+.founder-svg img {
+  width: 20px;
+  height: auto;
+  display: block;
 }
 
 .founder-main {
