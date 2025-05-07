@@ -82,6 +82,7 @@ nav .nav-bar {
   color: #444342;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.2px;
 }
 
 .nav-links li a:hover {
@@ -254,13 +255,13 @@ nav .nav-bar {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(3px);
   padding: 5px;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
 }
 
 .games img {
   width: 100%;
   height: auto;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   background-color: #fafafa;
   border: 0.5px solid #dadada;
 }
@@ -385,7 +386,7 @@ nav .nav-bar {
   max-width: 330px;
   background-color: #fafafa;
   border: 0.5px solid #dadada;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   padding: 15px 13px;
   transition: all 0.3s ease;
   position: relative;
@@ -415,22 +416,23 @@ nav .nav-bar {
   font-size: 0.75rem;
   background-color: #fff;
   border: 0.5px solid #dadada;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   padding: 5px 6px;
 }
 
 .sub-info {
   border: 0.5px solid #dadada;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   padding: 12px;
   text-align: justify;
 }
 
 .sub-info p {
-  line-height: 1.6;
   font-size: 0.75rem;
   font-weight: 450;
+  letter-spacing: 0.2px;
+  line-height: 1.6;
   opacity: 0.9;
 }
 
