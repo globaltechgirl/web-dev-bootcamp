@@ -906,7 +906,6 @@ footer {
 
   .users {
     margin-top: 55px;
-    padding: 6px 14px 1px;
   }
 
   .users-img img {
@@ -969,9 +968,12 @@ footer {
   }
 
   .collection-wrapper {
-    padding: 40px 0px;
     margin-bottom: 30px;
     margin-top: 50px;
+  }
+
+  .collection-body {
+    padding: 40px 0px;
   }
 
   .collection-main {

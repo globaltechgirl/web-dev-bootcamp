@@ -1035,9 +1035,14 @@ footer {
 
   .about-founder {
     width: 85%;
+    margin: 0 auto;
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 50px;
+  }
+
+  .founder-img {
+    max-width: 700px;
   }
 
   .founder-sub {
@@ -1117,7 +1122,7 @@ footer {
     margin-bottom: 40px;
     line-height: 1.6;
   }
-  
+
   .contact-wrapper {
     gap: 30px;
   }
@@ -1134,6 +1139,7 @@ footer {
   .contact-icon:hover {
     border: 0.5px solid #dadada;
   }
+
   .footer {
     padding: 20px 30px;
   }
@@ -1142,5 +1148,82 @@ footer {
 @media (min-width: 601px) and (max-width: 1024px) {
   nav {
     max-width: 85%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .about-founder {
+    width: 85%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 50px;
+  }
+
+  .founder-img {
+    max-width: 700px;
+  }
+
+  .founder-sub {
+    padding: 35px 25px 35px 25px;
+  }
+
+  .founder-svg {
+    margin-bottom: 30px;
+  }
+
+  .about-stack {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 60px;
+  }
+
+  .stack-body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stack-side {
+    display: none;
+  }
+
+  .about-services {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .services-body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+  .about-founder {
+    width: 85%;
+  }
+
+  .founder-img {
+    max-width: 700px;
+  }
+
+  .founder-img {
+    flex: 1.5;
+  }
+
+  .stack-wrapper {
+    gap: 2.5rem;
+  }
+
+  .stack-body {
+    width: 80%;
+  }
+
+  .services-body {
+    width: 85%;
   }
 }
