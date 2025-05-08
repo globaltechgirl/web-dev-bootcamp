@@ -134,6 +134,7 @@ nav .nav-bar {
   padding: 4px 10px 4px 4px;
   border-radius: 20px;
   border: 0.5px solid #dadada;
+  background-color: #fff;
   font-weight: 550;
   font-size: 0.7rem;
 }
@@ -195,6 +196,7 @@ nav .nav-bar {
   align-items: center;
   justify-content: center;
   border: 0.5px solid #dadada;
+  background-color: #fff;
   border-radius: 20px;
   color: #444342;
   padding: 0px 8px;

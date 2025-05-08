@@ -178,55 +178,6 @@ nav .nav-bar {
   line-height: 1.6;
 }
 
-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 45px;
-}
-
-.input {
-  flex: 0.65;
-  padding: 3px;
-  border-radius: 0.5rem;
-  border: 1px solid #dadada;
-  background-color: #fafafa;
-}
-
-input[type="email"] {
-  width: 100%;
-  padding: 8px 16px;
-  border: 1px solid #fafafa;
-  border-radius: 0.5rem;
-  font-size: 0.7rem;
-  letter-spacing: 0.3px;
-  outline: none;
-  color: #444342;
-}
-
-.button {
-  padding: 3px;
-  border-radius: 0.5rem;
-  border: 1px solid #dadada;
-}
-
-button {
-  all: unset;
-  margin: 0;
-  padding: 8px 16px;
-  border-radius: 0.4rem;
-  font-weight: 550;
-  font-size: 0.7rem;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  border: 1px solid #f0f0f0;
-  background-color: #fafafa;
-  color: #444342;
-}
-
 .changelog {
   color: #444342;
   width: 75%;
@@ -235,7 +186,7 @@ button {
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 70px;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .changelog-left {
@@ -628,15 +579,7 @@ footer {
 
   .header-sub {
     margin-top: 25px;
-    width: 95%;
-  }
-
-  form {
-    margin-top: 35px;
-  }
-
-  .input {
-    flex: 1;
+    width: 98%;
   }
 
   .changelog-img {
@@ -688,10 +631,6 @@ footer {
 
   .header-main {
     font-size: 3rem;
-  }
-
-  .input {
-    flex: 0.85;
   }
 
   .changelog {

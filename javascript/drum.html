@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Drum Kit</title>
-    <meta name="description" content="The Drum Kit by Ecade" />
-    <link rel="icon" href="favicon.ico" type="image/png" />
+    <meta name="description" content="Ecade - The Drum Kit" />
+    <link rel="icon" href="./images/icon.png" type="image/png" />
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
       rel="stylesheet"
@@ -50,7 +50,9 @@
                       <a href="./index.html" class="nav-link">Home</a>
                     </li>
                     <li class="list">
-                      <a href="./collection.html" class="nav-link">Collection</a>
+                      <a href="./collection.html" class="nav-link"
+                        >Collection</a
+                      >
                     </li>
                     <li class="list">
                       <a href="./about.html" class="nav-link">About</a>
@@ -106,9 +108,11 @@
     </nav>
 
     <div class="container">
-      <div class="info">
-        <p class="desktop">Press Key to Beat</p>
-        <p class="mobile">Click Box to Beat</p>
+      <div class="header-pre">
+        <div class="pre">
+          <p class="desktop">Press Key to Beat the Drum</p>
+          <p class="mobile">Click Box to Beat the Drum</p>
+        </div>
       </div>
 
       <h1 id="title">Beat the Drum!</h1>
@@ -125,7 +129,46 @@
     </div>
 
     <footer>
-      <a href="https://github.com/globaltechgirl">© 2025 GlobalTechGirl</a>
+      <div class="footer">
+        <div class="info">© 2025 GlobalTechGirl</div>
+
+        <div class="socials">
+          <input type="radio" name="social-toggle" id="github" />
+          <label
+            for="github"
+            class="social-link github"
+            data-url="https://github.com/globaltechgirl"
+          >
+            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </label>
+
+          <input type="radio" name="social-toggle" id="twitter" />
+          <label
+            for="twitter"
+            class="social-link twitter"
+            data-url="https://x.com/globaltechgirl"
+          >
+            <a href="#" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </label>
+
+          <input type="radio" name="social-toggle" id="linkedin" />
+          <label
+            for="linkedin"
+            class="social-link linkedin"
+            data-url="https://www.linkedin.com/in/globaltechgirl/"
+          >
+            <a href="#" target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </label>
+
+          <div class="slider">
+            <div class="ball"></div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script
