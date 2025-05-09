@@ -21,6 +21,7 @@ closeIcon.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
+// simon game
 var buttonColours = ["pink", "green", "brown", "blue"];
 
 var gamePattern = [];

@@ -27,11 +27,9 @@ var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfDrumButtons; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
-    var buttonInnerHTML = this.classList[0];
-
-    makeSound(buttonInnerHTML);
-
-    buttonAnimation(buttonInnerHTML);
+    var key = this.getAttribute("data-key");
+    makeSound(key);
+    buttonAnimation(key);
   });
 }
 
@@ -86,11 +84,11 @@ function makeSound(key) {
 }
 
 function buttonAnimation(currentKey) {
-  var activeButton = document.querySelector("." + currentKey);
-
-  activeButton.classList.add("pressed");
-
-  setTimeout(function () {
-    activeButton.classList.remove("pressed");
-  }, 100);
+  var activeButton = document.querySelector(`.drum[data-key="${currentKey}"]`);
+  if (activeButton) {
+    activeButton.classList.add("pressed");
+    setTimeout(function () {
+      activeButton.classList.remove("pressed");
+    }, 100);
+  }
 }

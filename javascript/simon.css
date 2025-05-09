@@ -113,10 +113,14 @@ nav .nav-bar {
   display: none;
 }
 
+.container {
+  margin: auto;
+  text-align: center;
+}
+
 .header-pre {
   margin: 0 auto;
   margin-top: 80px;
-  margin-bottom: 30px;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -143,20 +147,21 @@ nav .nav-bar {
   display: none;
 }
 
-#level-title {
+h1 {
+  margin: 45px 0 auto;
+  color: #444342;
   font-family: "Press Start 2P", cursive;
   text-shadow: 5px 0 #dadada;
   font-size: 3rem;
-  margin: 45px 0 auto;
-  color: #676564;
+  letter-spacing: 1px;
   text-align: center;
 }
 
-.container {
+.simon-container {
   display: block;
-  margin: 45px 0 auto;
   max-width: 100%;
-  text-align: center;
+  justify-content: center;
+  margin: 60px auto 0;
 }
 
 .row {
@@ -171,43 +176,24 @@ nav .nav-bar {
   flex: 1 1 22%;
   max-width: 22%;
   aspect-ratio: 1 / 1;
-  background-color: #fdfdfd;
-  border-radius: 10%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: 6px solid #444342;
+  border-radius: 0.5rem;
+  border: 1px solid #444342;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  position: relative;
+  text-align: center;
+  padding: 2px;
+  cursor: pointer;
 }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.pink {
-  background-image: url(./images/simon2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.brown {
-  background-image: url(./images/simon1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.green {
-  background-image: url(./images/simon4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.blue {
-  background-image: url(./images/simon3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.row img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  background-color: #fafafa;
+  border: 0.5px solid #dadada;
+  padding: 5px;
+  display: block;
 }
 
 .pressed {
@@ -500,13 +486,17 @@ footer {
     display: block;
   }
 
-  #level-title {
+  .header-pre {
+    margin-top: 55px;
+  }
+
+  h1 {
     font-size: 1.5rem;
     margin: 40px 0 auto;
   }
 
-  .container {
-    margin: 40px 0 auto;
+  .simon-container {
+    margin: 40px auto 0;
   }
 
   .btn {
@@ -515,8 +505,13 @@ footer {
     max-width: 35%;
   }
 
+  .row img {
+    padding: 2px;
+  }
+
   .footer {
     padding: 20px 30px;
+    margin-top: 55px;
   }
 }
 
@@ -531,8 +526,12 @@ footer {
 }
 
 @media (min-width: 601px) and (max-width: 800px) {
-  #level-title {
+  h1 {
     font-size: 2rem;
+  }
+
+  .simon-container {
+    margin: 50px auto 0;
   }
 
   .btn {
@@ -540,10 +539,14 @@ footer {
     flex: 1 1 30%;
     max-width: 30%;
   }
+
+  .row img {
+    padding: 3px;
+  }
 }
 
 @media (min-width: 800px) and (max-width: 1200px) {
-  #level-title {
+  h1 {
     font-size: 2.5rem;
   }
 
@@ -551,6 +554,10 @@ footer {
     margin: 15px;
     flex: 1 1 25%;
     max-width: 25%;
+  }
+
+  .row img {
+    padding: 4px;
   }
 }
 
