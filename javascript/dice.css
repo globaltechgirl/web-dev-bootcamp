@@ -63,6 +63,7 @@ nav .nav-bar {
 
 .logo img {
   width: 90px;
+  display: block;
 }
 
 .nav-bar .nav-links {
@@ -88,25 +89,6 @@ nav .nav-bar {
 .nav-links li a:hover {
   color: #676564;
   letter-spacing: 0.5px;
-}
-
-.nav-links li a::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -3px;
-  transform: translateX(-50%);
-  height: 2px;
-  width: 8px;
-  border-radius: 50px;
-  background-color: #444342;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.nav-links li:hover a::before {
-  opacity: 1;
-  background-color: #676564;
 }
 
 .sidemenu {
@@ -382,7 +364,7 @@ footer {
   }
 
   .sidebar .close-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
     color: #444342;
   }

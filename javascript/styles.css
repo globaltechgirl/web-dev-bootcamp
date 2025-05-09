@@ -63,6 +63,7 @@ nav .nav-bar {
 
 .logo img {
   width: 90px;
+  display: block;
 }
 
 .nav-bar .nav-links {
@@ -88,25 +89,6 @@ nav .nav-bar {
 .nav-links li a:hover {
   color: #676564;
   letter-spacing: 0.5px;
-}
-
-.nav-links li a::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -3px;
-  transform: translateX(-50%);
-  height: 2px;
-  width: 8px;
-  border-radius: 50px;
-  background-color: #444342;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.nav-links li:hover a::before {
-  opacity: 1;
-  background-color: #676564;
 }
 
 .sidemenu {
@@ -161,7 +143,7 @@ main {
 }
 
 .users-text {
-  font-weight: 500;
+  font-weight: 550;
   font-size: 0.7rem;
   color: #444342;
   line-height: 1;
@@ -217,6 +199,12 @@ main {
   transition: color 0.3s ease;
 }
 
+.main-link1 a:hover,
+.main-link2 a:hover {
+  color: #121212;
+  opacity: 0.9;
+}
+
 .main-link1 a {
   border: 0.5px solid #dadada;
   background-color: #fafafa;
@@ -244,7 +232,7 @@ main {
 }
 
 .main-link2 a:hover i {
-  transform: rotate(90deg);
+  transform: rotate(70deg);
 }
 
 .floating {
@@ -798,7 +786,7 @@ footer {
   }
 
   .sidebar .close-icon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
     color: #444342;
   }
